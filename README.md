@@ -4,7 +4,7 @@
 
 Serat M. Saad & Yuan-Sen Ting (2026)
 
-[arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX) | [ADS](https://ui.adsabs.harvard.edu/)
+[arXiv:2512.19652](https://arxiv.org/abs/2512.19652) | [ADS](https://ui.adsabs.harvard.edu/)
 
 ---
 
@@ -12,15 +12,7 @@ Serat M. Saad & Yuan-Sen Ting (2026)
 
 This repository contains the data and analysis code for Saad & Ting (2026), in which we test MOND using high-precision differential radial velocities of wide-binary stars from the C3PO survey.
 
-We measure differential RVs with precisions of ~8–15 m/s per binary pair using high-resolution echelle spectroscopy, a ~24× improvement over *Gaia* DR3. We construct a hierarchical Bayesian model to jointly infer orbital elements for 57 gravitationally bound wide-binary systems and the global MOND acceleration scale *a*₀.
 
-### Key Results
-
-- **b = 1 (simple interpolating function):** canonical *a*₀ excluded at 3.1σ
-- **b = 2 (standard interpolating function):** canonical *a*₀ excluded at 1.9σ
-- **Gravity boost factor:** γ = 1.08 ± 0.20, consistent with Newtonian gravity
-
----
 
 ## Repository Structure
 
@@ -29,9 +21,7 @@ wb3d-mond/
 ├── README.md
 ├── mond_analysis.py                 # Main analysis script (all three analyses)
 ├── data/
-│   └── c3po_wide_binaries.csv       # Differential RV measurements + Gaia astrometry for 85 C3PO pairs
-└── notebooks/
-    └── mond_hierarchical_model.ipynb # Full development notebook (exploratory)
+    └── c3po_wide_binaries.csv       # Differential RV measurements + Gaia astrometry for 85 C3PO pairs
 ```
 
 ## Data
@@ -54,7 +44,6 @@ Of the 85 pairs, 57 satisfy our bound selection criterion (scaled velocity $\til
 2. **MOND $a_0$ inference** — Hierarchical Bayesian model with EFE, run for both interpolating functions ($b=1,2$) and three prior ranges
 3. **Supplementary $\gamma$ test** — Fits $G_{\rm eff} = \gamma G_{\rm N}$ (Appendix C of paper)
 
-The `notebooks/` directory contains the full development notebook with exploratory code and plotting scripts.
 
 ### Dependencies
 
@@ -100,7 +89,7 @@ If you use this data or code, please cite:
   title   = {High-Precision Differential Radial Velocities of C3PO Wide Binaries: A Test of Modified Newtonian Dynamics (MOND)},
   journal = {arXiv e-prints},
   year    = {2026},
-  eprint  = {XXXX.XXXXX},
+  eprint  = {2512.19652},
 }
 ```
 
